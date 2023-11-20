@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol>
+        <li>mango</li>
+        <li>apple</li>
+        <li>banana</li>
+    </ol>
+    <input type="text">
+    <button>add</button>
+    <script>
+        let a=document.querySelector('ol')
+        let b=document.querySelector('input')
+        let c=document.querySelector('button')
+
+        c.addEventListener("click",function(){
+            let d=b.value
+            let e=document.createElement('li')
+              e.textContent=d
+            a.appendChild(e)
+        })
+    </script>
+</body>
+</html>
